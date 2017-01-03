@@ -12,6 +12,10 @@ html {
     height: 100%;
 }
 
+footer {
+    color: white;
+}
+
 h1 {
     font-family: lfm;
     color: #fff;
