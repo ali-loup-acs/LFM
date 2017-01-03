@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <meta charset="utf-8">
     <title>Les fées mères</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,24 +24,29 @@
         <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="index.html" method="post">
             <div class="form-group">
                 <label for="email"></label>
-                <input type="email" class="form-control" placeholder="Votre e-mail" id="emailp">
-            </div>
-            <label for="email"></label>
+                <input type="email" class="form-control" id="emailp" name="email" placeholder="Votre e-mail" tabindex="2" required></div>
             <input type="email" class="form-control" placeholder="E-mail du destinataire" id="email">
             <button class="file-upload btn-primary btn-lg glyphicon glyphicon-plus">
             <input type="file" class="file-input"></button>
             <div class="checkbox">
                 <label id="checkbox-text"><input type="checkbox">Reçevoir une copie du mail</label>
             </div>
-            <button type="submit" class="btn btn-success col-md-8 col-md-push-2 col-xs-10 col-xs-push-1" id="button-submit">Submit</button>
+            <div class="wrapper">
+                <a href="#" class="fancy-button pop-onhover bg-gradient1 col-md-6"><span>Envoyer votre fichier</span></a>
+            </div>
     </div>
     </form>
 
     <!-- FIN FORMULAIRE -->
 
     <footer>
-        <p><i>Copyright QAMA &#169; </i></p>
+        <p id="copy"><i>Copyright QAMA &#169; </i></p>
     </footer>
+
+</body>
+
+</html>
+</footer>
 
 </body>
 
