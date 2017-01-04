@@ -35,6 +35,7 @@
                 else {
                   sendEmail($email,$emailp,$url);
                 }
+                header('Location:http://'.$_SERVER['SERVER_NAME'].'/lfm/merciup.html');
 
            }
            else //Sinon (la fonction renvoie FALSE).
