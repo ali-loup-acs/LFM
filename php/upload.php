@@ -25,7 +25,7 @@
                 $size = $_FILES['file']['size'];
                 $file_name =  $info['filename'];
                 $type = $info['extension'];
-                $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/php/download.php?file='.$id_dir;
+                $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/mercidl.php?file='.$id_dir;
                 $email = $_REQUEST['email'];
                 $emailp = $_REQUEST['emailp'];
                 addFile($id_dir,$file_name,$size,$type, $url);
