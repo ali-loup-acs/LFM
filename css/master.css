@@ -1,7 +1,4 @@
-<<<<<<< HEAD=======
-/*definition de l'animation des oreilles*/
-
->>>>>>>origin/master @keyframes balance {
+@keyframes balance {
     0% {
         transform: skewY(5deg);
     }
@@ -263,12 +260,6 @@ label {
     background-position: right;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-}
-
 h1 {
     font-family: lfm;
     color: #fff;
@@ -283,9 +274,12 @@ h2 {
     font-size: 2vmax;
 }
 
-body {
+html {
     width: 100%;
     height: 100%;
+}
+
+body {
     background-repeat: no-repeat;
     background: #092756;
     background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
@@ -323,7 +317,7 @@ body {
 }
 
 form {
-    margin-top: 20vh;
+    margin-top: 12vh;
     padding-bottom: 5vh;
     -webkit-box-shadow: 1px 0px 40px -1px rgba(255, 255, 255, 1);
     -moz-box-shadow: 1px 0px 40px -1px rgba(255, 255, 255, 1);
