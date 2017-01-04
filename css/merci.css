@@ -49,3 +49,18 @@ h3 {
     bottom: 0;
     right: 2%;
 }
+
+button {
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    font-family: lfm;
+    font-size: 1.9vmax;
+    margin-left: 38%;
+    margin-top: 20%;
+    border-radius: 60px;
+    width: 25%;
+    height: 10%;
+    background: #52A0FD;
+    background: -webkit-linear-gradient(left, #ac4747 0%, #314c9e 90%, #314c9e 100%);
+    background: linear-gradient(to right, #ac4747 0%, #314c9e 90%, #314c9e 100%);
+}

@@ -51,131 +51,18 @@ svg {
     height: auto;
 }
 
-
-/* BOUTON ENVOYER */
-
-.bg-gradient1 span, .bg-gradient1:before {
+#submit {
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    font-family: lfm;
+    font-size: 1vmax;
+    border-radius: 60px;
+    width: 80%;
+    height: 250%;
     background: #52A0FD;
     background: -webkit-linear-gradient(left, #ac4747 0%, #314c9e 90%, #314c9e 100%);
     background: linear-gradient(to right, #ac4747 0%, #314c9e 90%, #314c9e 100%);
 }
-
-
-/* General */
-
-.wrapper {
-    margin: 10%;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover, a:focus, a:active {
-    text-decoration: none;
-}
-
-
-/* fancy Button */
-
-.fancy-button {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.fancy-button:before {
-    display: inline-block;
-    position: absolute;
-    bottom: -5px;
-    z-index: -1;
-    border-radius: 30em;
-    -webkit-filter: blur(20px) brightness(0.95);
-    filter: blur(20px) brightness(0.95);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.fancy-button i {
-    margin-top: -1px;
-    margin-right: 20px;
-    font-size: 1.265em;
-    vertical-align: middle;
-}
-
-.fancy-button span {
-    display: inline-block;
-    padding: 3ex 5vw;
-    border-radius: 50em;
-    z-index: 2;
-    will-change: transform, filter;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.fancy-button:focus, .fancy-button:active {
-    color: #ffffff;
-}
-
-.fancy-button:hover {
-    color: #ffffff;
-}
-
-.fancy-button:hover span {
-    -webkit-filter: brightness(1.05) contrast(1.05);
-    filter: brightness(1.05) contrast(1.05);
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
-.fancy-button:hover:before {
-    bottom: 0;
-    -webkit-filter: blur(10px) brightness(0.95);
-    filter: blur(10px) brightness(0.95);
-}
-
-.fancy-button.pop-onhover:before {
-    opacity: 0;
-    bottom: 10px;
-}
-
-.fancy-button.pop-onhover:hover:before {
-    bottom: -7px;
-    opacity: 1;
-    -webkit-filter: blur(20px);
-    filter: blur(20px);
-}
-
-.fancy-button.pop-onhover:hover span {
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
-}
-
-.fancy-button.pop-onhover:hover:active span {
-    -webkit-filter: brightness(1) contrast(1);
-    filter: brightness(1) contrast(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-}
-
-.fancy-button.pop-onhover:hover:active:before {
-    bottom: 0;
-    -webkit-filter: blur(10px) brightness(0.95);
-    filter: blur(10px) brightness(0.95);
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-
-/*FIN BOUTON ENVOYER*/
 
 label {
     margin-top: 5%;

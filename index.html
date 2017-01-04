@@ -244,7 +244,7 @@
 
             <input type="email" class="form-control" placeholder="E-mail du destinataire" id="email" name="email" required>
 
-            <button class="file-upload btn-default btn-lg glyphicon glyphicon-plus">
+            <button type="button" class="file-upload btn-default btn-lg glyphicon glyphicon-plus">
             <input type="file" class="file-input" name="file"></button>
 
             <div class="" id="file-name">lol.jpg</div>
@@ -253,19 +253,7 @@
                 <label id="checkbox-text"><input type="checkbox" name="copy" value="ok">Reçevoir une copie du mail</label>
             </div>
 
-            <div class="wrapper">
-                <a href="javascript: submit()" class="fancy-button pop-onhover bg-gradient1 col-md-6 col-xs-12"><span>Envoyer</span></a>
-            </div>
-
-            <!-- SCRIPT SUBMIT -->
-
-            <script type="text/javascript">
-                function submit() {
-                    document.forms["submit"].submit()
-                }
-            </script>
-
-            <!-- END OF SUBMIT SCRIPT -->
+            <button type="submit" name="button" id="submit">ENVOYER</button>
 
         </form>
     </div>
