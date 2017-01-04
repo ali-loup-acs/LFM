@@ -1,3 +1,59 @@
+
+/*definition de l'animation des oreilles*/
+
+@keyframes balance {
+    0% {
+        transform: skewY(5deg);
+    }
+    5% {
+        transform: skewY(-1deg);
+    }
+    10% {
+        transform: skewY(5deg);
+    }
+    100% {
+        transform: skewY(5deg);
+    }
+}
+
+@keyframes balancedroite {
+    0% {
+        transform: skewY(-10deg);
+    }
+    5% {
+        transform: skewY(2deg);
+    }
+    10% {
+        transform: skewY(-10deg);
+    }
+    100% {
+        transform: skewY(-10deg);
+    }
+}
+
+#oreille_gauche {
+    animation-delay: 2s;
+    animation-name: balance;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+    animation-direction: alternate;
+}
+
+#oreille_droite {
+    animation-name: balancedroite;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+    animation-direction: alternate;
+    transition-delay: 10s;
+}
+
+svg {
+    width: 150px;
+    height: auto;
+}
+
 /* bg shortcodes */
 
 .bg-gradient1 span, .bg-gradient1:before {
@@ -299,58 +355,3 @@ form {
 }
 
 ha(opacity=0);
-
-/*definition de l'animation des oreilles*/
-
-@keyframes balance {
-    0% {
-        transform: skewY(5deg);
-    }
-    5% {
-        transform: skewY(-1deg);
-    }
-    10% {
-        transform: skewY(5deg);
-    }
-    100% {
-        transform: skewY(5deg);
-    }
-}
-
-@keyframes balancedroite {
-    0% {
-        transform: skewY(-10deg);
-    }
-    5% {
-        transform: skewY(2deg);
-    }
-    10% {
-        transform: skewY(-10deg);
-    }
-    100% {
-        transform: skewY(-10deg);
-    }
-}
-
-#oreille_gauche {
-    animation-delay: 2s;
-    animation-name: balance;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transform-origin: right;
-    animation-direction: alternate;
-}
-
-#oreille_droite {
-    animation-name: balancedroite;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transform-origin: left;
-    animation-direction: alternate;
-    transition-delay: 10s;
-}
-
-svg {
-    width: 150px;
-    height: auto;
-}
