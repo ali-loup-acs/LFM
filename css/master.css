@@ -1,4 +1,7 @@
-@keyframes balance {
+<<<<<<< HEAD=======
+/*definition de l'animation des oreilles*/
+
+>>>>>>>origin/master @keyframes balance {
     0% {
         transform: skewY(5deg);
     }
