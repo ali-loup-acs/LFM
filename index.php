@@ -236,7 +236,7 @@
     <!-- FORMULAIRE -->
 
     <div class="container">
-        <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="php/upload.php" method="post" id="form" enctype="multipart/form-data">
+        <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="upload.php" method="post" id="form" enctype="multipart/form-data">
             <div class="form-group">
 
                 <label for="email"></label>

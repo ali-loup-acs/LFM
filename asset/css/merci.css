@@ -56,11 +56,37 @@ button {
     font-family: lfm;
     font-size: 1.9vmax;
     margin-left: 38%;
-    margin-top: 20%;
+    margin-top: 15%;
     border-radius: 60px;
     width: 25%;
     height: 10%;
-    background: #52A0FD;
-    background: -webkit-linear-gradient(left, #ac4747 0%, #314c9e 90%, #314c9e 100%);
-    background: linear-gradient(to right, #ac4747 0%, #314c9e 90%, #314c9e 100%);
+    background: none;
+    border-radius: 60px;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+}
+
+button:hover:after {
+    width: 0%;
+}
+
+#copyright {
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    font-family: lfm;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
 }
