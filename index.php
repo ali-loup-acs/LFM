@@ -5,9 +5,9 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <meta charset="utf-8">
     <title>Les fées mères</title>
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master.css">
+    <script type="text/javascript" src="asset/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/master.css">
 </head>
 
 <body>

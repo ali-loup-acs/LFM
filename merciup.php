@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Les fées mères - Merci</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/merci.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/merci.css">
 </head>
 
 <body>
