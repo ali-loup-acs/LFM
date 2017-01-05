@@ -5,6 +5,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <meta charset="utf-8">
     <title>Les fées mères</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
 </head>
@@ -217,6 +218,8 @@
       </g>
     </svg></center>
 
+        <!-- SVG ENDING (SO SAD) -->
+
         <div class="container">
             <div class="row">
                 <center>
@@ -235,16 +238,27 @@
     <div class="container">
         <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="php/upload.php" method="post" id="form" enctype="multipart/form-data">
             <div class="form-group">
+
                 <label for="email"></label>
 
-                <input type="email" class="form-control" id="emailp" name="emailp" placeholder="Votre e-mail" tabindex="2" required></div>
+                <input type="email" class="form-control" id="emailp" name="emailp" placeholder="E-mail" tabindex="2" autocomplete="off" required></div>
 
-            <input type="email" class="form-control" placeholder="E-mail du destinataire" id="email" name="email" required>
+            <input type="email" class="form-control" placeholder="E-mail destinataire" id="email" name="email" autocomplete="off" required>
 
-            <button type="button" class="file-upload btn-default btn-lg glyphicon glyphicon-plus">
-            <input type="file" class="file-input" name="file"></button>
 
-            <div class="" id="file-name">lol.jpg</div>
+            <!-- au click, .trigger('click'); = à l'action, simule le click sur le input type file($('#file-select')) qui représente le input et son id -->
+            <button type="button" onclick="$('#file-select').trigger('click');" name="button">LOL</button>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#file-select').change(function() {
+                        console.log($(this));
+                        console.log($(this).val());
+                    });
+                });
+            </script>
+
+            <input type="file" id="file-select" name="file" style="display: none;">
 
             <div class="checkbox">
                 <label id="checkbox-text"><input type="checkbox" name="copy" value="ok">Recevoir une copie du mail</label>
@@ -257,9 +271,14 @@
 
     <!-- FIN FORMULAIRE -->
 
+
+    <!-- FOOTER -->
+
     <footer>
-        <p id="copy"><i>Copyright QAMA &#169; </i></p>
+        <p id="copyright"><i>Copyright QAMA &#169; </i></p>
     </footer>
+
+    <!-- FIN FOOTER -->
 
 </body>
 
