@@ -1,9 +1,9 @@
 <?php
-include_once('db.php');
+include_once('include/db.php');
 if(isset($_REQUEST['file'])){
   $id_dir=$_REQUEST['file'];
   $result = findFile($id_dir);
-  $path_file = '../upload/'.$id_dir.'/'.$result['name'].'.'.$result['type'];
+  $path_file = 'upload/'.$id_dir.'/'.$result['name'].'.'.$result['type'];
   if (file_exists($path_file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');

@@ -1,7 +1,7 @@
     <?php
       ini_set('display_errors', 1);
       require_once('envoimail.php');
-      require_once('db.php');
+      require_once('include/db.php');
       print_r($_REQUEST);
       // function human_filesize($bytes, $decimals = 2) {
       //   $sz = 'BKMGTP';
@@ -15,7 +15,7 @@
       if(isset($_FILES['file'])&&isset($_REQUEST['email'])&&isset($_REQUEST['emailp']))
       {
            $id_dir = uniqid();
-           $dossier = '../upload'.'/'.$id_dir;
+           $dossier = 'upload'.'/'.$id_dir;
            mkdir($dossier,0755);
            $file = basename($_FILES['file']['name']);
            if(move_uploaded_file($_FILES['file']['tmp_name'], $dossier .'/' . $file)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
@@ -25,7 +25,7 @@
                 $size = $_FILES['file']['size'];
                 $file_name =  $info['filename'];
                 $type = $info['extension'];
-                $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/php/mercidl.php?file='.$id_dir;
+                $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/mercidl.php?file='.$id_dir;
                 $email = $_REQUEST['email'];
                 $emailp = $_REQUEST['emailp'];
                 addFile($id_dir,$file_name,$size,$type, $url, $email, $emailp);
@@ -35,7 +35,7 @@
                 else {
                   sendEmail($email,$emailp,$url);
                 }
-                header('Location:http://'.$_SERVER['SERVER_NAME'].'/lfm/merciup.html');
+                header('Location:http://'.$_SERVER['SERVER_NAME'].'/lfm/merciup.php');
 
            }
            else //Sinon (la fonction renvoie FALSE).
