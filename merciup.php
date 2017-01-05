@@ -240,7 +240,7 @@
     <center>
         <h1>Votre fichier est maintenant en ligne</h1>
         <h1>Nous vous remercions d'avoir choisis Les fee meres</h1>
-        <a href="index.html"><h3>Revenir a la page d'acceuil</h3></a>
+        <a href="index.php"><h3>Revenir a la page d'acceuil</h3></a>
     </center>
 
     <footer>
