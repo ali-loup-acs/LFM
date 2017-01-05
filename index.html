@@ -252,7 +252,7 @@
                 $(document).ready(function() {
                     $('#file-select').change(function() {
                         console.log($(this).val());
-                        $('#file-value').html($(this).val()); // permet de récuperer la valeur du chemin d'accès du fichier définis ci dessus
+                        $('#file-value').html($(this).val().split('\\').pop()); // permet de récuperer la valeur du chemin d'accès du fichier définis ci dessus
                     });
                 });
             </script>

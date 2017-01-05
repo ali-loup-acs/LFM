@@ -215,6 +215,15 @@ form {
     right: 2%;
 }
 
+#file-value {
+    display: inline-block;
+    margin-left: 4%;
+    color: #fff;
+    white-space: nowrap;
+    width: 70%;
+    overflow: hidden;
+}
+
 #button {
     font-family: lfm;
     color: #fff;
@@ -244,14 +253,6 @@ form {
     width: 0%;
 }
 
-#file-value {
-    margin-left: 4%;
-    color: #fff;
-}
-
-
-/*TEST TEST TEST TEST*/
-
 .button {
     font-family: lfm;
     color: #fff;
@@ -276,3 +277,6 @@ form {
 .button:hover:after {
     width: 0%;
 }
+
+
+/*TEST TEST TEST TEST*/
