@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <meta charset="utf-8">
     <title>Les fées mères</title>
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
 </head>
@@ -245,26 +245,27 @@
 
             <input type="email" class="form-control" placeholder="E-mail destinataire" id="email" name="email" autocomplete="off" required>
 
-
             <!-- au click, .trigger('click'); = à l'action, simule le click sur le input type file($('#file-select')) qui représente le input et son id -->
-            <button type="button" onclick="$('#file-select').trigger('click');" name="button">LOL</button>
+            <button type="button" onclick="$('#file-select').trigger('click');" name="button" id="button">+</button>
 
             <script type="text/javascript">
                 $(document).ready(function() {
                     $('#file-select').change(function() {
-                        console.log($(this));
                         console.log($(this).val());
+                        $('#file-value').html($(this).val()); // permet de récuperer la valeur du chemin d'accès du fichier définis ci dessus
                     });
                 });
             </script>
 
-            <input type="file" id="file-select" name="file" style="display: none;">
+            <input type="file" id="file-select" accept="media_type" name="file" style="display: none;">
+
+            <span id="file-value"></span>
 
             <div class="checkbox">
                 <label id="checkbox-text"><input type="checkbox" name="copy" value="ok">Recevoir une copie du mail</label>
             </div>
 
-            <center><button type="submit" name="button" id="submit">ENVOYER</button></center>
+            <center><button type="submit" name="button" class="button" id="submit">ENVOYER</button></center>
 
         </form>
     </div>

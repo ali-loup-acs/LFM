@@ -3,6 +3,9 @@
     src: url(../fonts/Arkhip_font.ttf);
 }
 
+
+/*SVG ANIMATION*/
+
 @keyframes balance {
     0% {
         transform: skewY(5deg);
@@ -51,6 +54,9 @@
     transition-delay: 10s;
 }
 
+
+/*END SVG ANIMATION*/
+
 svg {
     width: 150px;
     height: auto;
@@ -65,14 +71,12 @@ html {
     color: #fff;
     text-shadow: #fff 0 0 10px;
     font-family: lfm;
-    font-size: 1vmax;
+    font-size: 2vmin;
     border-radius: 60px;
     width: 80%;
     padding-top: 3%;
     padding-bottom: 3%;
-    background: #52A0FD;
-    background: -webkit-linear-gradient(left, #ac4747 0%, #314c9e 90%, #314c9e 100%);
-    background: linear-gradient(to right, #ac4747 0%, #314c9e 90%, #314c9e 100%);
+    background: none;
 }
 
 label {
@@ -130,6 +134,10 @@ label {
 
 
 /*END OF PLACEHOLDER COLOR*/
+
+#email {
+    margin-top: 5%;
+}
 
 .form-control {
     color: black;
@@ -190,8 +198,6 @@ form {
     border-radius: 20px;
 }
 
-#file-select {}
-
 #checkbox-text {
     font-weight: bold;
     margin: 0;
@@ -209,53 +215,64 @@ form {
     right: 2%;
 }
 
+#button {
+    font-family: lfm;
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    background: none;
+    border-radius: 60px;
+    font-size: 4vmin;
+    margin-top: 9%;
+    margin-bottom: 5%;
+    width: 17%;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#button:hover {
+    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+}
+
+#button:hover:after {
+    width: 0%;
+}
+
+#file-value {
+    margin-left: 4%;
+    color: #fff;
+}
+
 
 /*TEST TEST TEST TEST*/
 
-@import "compass/css3";
-
-/* ===================== FILE INPUT ===================== */
-
-.file-area {
-    width: 100%;
+.button {
+    font-family: lfm;
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    background-color: black;
+    border-radius: 60px;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
     position: relative;
-    input[type=file] {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        cursor: pointer;
-    }
-    .file-dummy {
-        width: 100%;
-        padding: 30px;
-        background: rgba(255, 255, 255, 0.2);
-        border: 2px dashed rgba(255, 255, 255, 0.2);
-        text-align: center;
-        transition: background 0.3s ease-in-out;
-        .success {
-            display: none;
-        }
-    }
-    &:hover .file-dummy {
-        background: rgba(255, 255, 255, 0.1);
-    }
-    input[type=file]:focus+.file-dummy {
-        outline: 2px solid rgba(255, 255, 255, 0.5);
-        outline: -webkit-focus-ring-color auto 5px;
-    }
-    input[type=file]:valid+.file-dummy {
-        border-color: rgba(0, 255, 0, 0.4);
-        background-color: rgba(0, 255, 0, 0.3);
-        .success {
-            display: inline-block;
-        }
-        .default {
-            display: none;
-        }
-    }
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.button:hover {
+    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+}
+
+.button:hover:after {
+    width: 0%;
 }
