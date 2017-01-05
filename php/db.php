@@ -1,11 +1,13 @@
 <?php
 
-  function addFile($id_dir,$file_name,$size,$type, $url){
+  function addFile($id_dir,$file_name,$size,$type, $url ,$email , $emailp){
     require_once('.init.php');
     // use the connection here
     try {
       $dbh = new PDO('mysql:host='.$host.';dbname='.$dbname.';', $user, $password);
-      $sql = "INSERT INTO FILES_UPLOAD (name, size, url, type, id_dir) VALUES ('$file_name', $size,'$url', '$type', '$id_dir')";
+      $sql = "INSERT INTO FILES_UPLOAD (name, size, url, type, id_dir, email_from, email_to) VALUES ('$file_name', $size,'$url', '$type', '$id_dir', '$emailp', '$email')";
+      
+
       $sth = $dbh->query($sql);// à changer
 
     //   if ($sth) {

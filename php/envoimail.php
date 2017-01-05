@@ -14,21 +14,15 @@ function sendEmail($email, $emailp, $url, $copy= NULL){
 	}
 
 
+
 	$nbErreurs = 0;
 	$msgErreurs = "";
 	$emailValid = true;
-	$message = '<!DOCTYPE html>
-	<html>
 
-	<head>
-	    <meta charset="utf-8">
-	    <title>Les fées mères</title>
-	</head>
-	</body>
-		<p>Bonjour, '.$emailp.' vous a partagé un fichier via notre service en ligne.  Cliquez sur le lien ci joint afin d’y accéder dès à présent et le télécharger en toute sécurité :</p>
-		 <a href="'.$url.'">Download</a>
-		<p>Merci d’avoir utilisé LFM</p>
-	</html>';
+	 $templateEmail = file_get_contents('../template/templateMail.html');
+          
+	$templateEmail = str_replace('{{url}}', $url, $templateEmail);
+	$message = str_replace('{{email}}', $emailp, $templateEmail);
 
 	$destinataire = $email ;
 	$expediteur= 'Les fées mères';
