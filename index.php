@@ -259,7 +259,7 @@
 
             <input type="file" id="file-select" accept="media_type" name="file" style="display: none;">
 
-            <span id="file-value"></span>
+            <span id="file-value">upload file</span>
 
             <div class="checkbox">
                 <label id="checkbox-text"><input type="checkbox" name="copy" value="ok">Recevoir une copie du mail</label>
