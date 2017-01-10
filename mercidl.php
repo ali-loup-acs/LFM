@@ -6,7 +6,7 @@ include_once('include/db.php');
   $name = $result['name'];
   $type = $result['type'];
   $mail = $result['email_from'];
-  $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/download.php?file='.$_REQUEST['file'];
+  $url = 'http://'.$_SERVER['SERVER_NAME'].'/LFM/download.php?file='.$_REQUEST['file'];
   $nomfichier = $name.".".$type;
 
   $templateddl = file_get_contents('template/templateddl.html');
