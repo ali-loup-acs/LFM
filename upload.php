@@ -1,17 +1,11 @@
     <?php
+    // ini_set('display_startup_errors', 1);
+    // error_reporting(E_ALL);
+    // $tmp_dir = ini_get('upload_tmp_dir') ? ini_get('upload_tmp_dir') : sys_get_temp_dir();
+    // die($tmp_dir);
       ini_set('display_errors', 1);
       require_once('envoimail.php');
       require_once('include/db.php');
-      print_r($_REQUEST);
-      // function human_filesize($bytes, $decimals = 2) {
-      //   $sz = 'BKMGTP';
-      //   $factor = floor((strlen($bytes) - 1) / 3);
-      //   return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
-      // }
-      // ini_set('display_startup_errors', 1);
-      // error_reporting(E_ALL);
-      // $tmp_dir = ini_get('upload_tmp_dir') ? ini_get('upload_tmp_dir') : sys_get_temp_dir();
-      // die($tmp_dir);
       if(isset($_FILES['file'])&&isset($_REQUEST['email'])&&isset($_REQUEST['emailp']))
       {
            $id_dir = uniqid();
