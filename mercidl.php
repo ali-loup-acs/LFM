@@ -11,7 +11,7 @@
   $name = $result[0]['name']; //modify for the multiple upload if necessary
   $type = $result[0]['type'];
   $mail = $result[0]['email_from'];
-  $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/download.php?file='.$_REQUEST['file'];
+  $url = 'http://'.$_SERVER['SERVER_NAME'].'/LFM/download.php?file='.$_REQUEST['file'];
   $nomfichier = $name.".".$type;
 
   $templateddl = file_get_contents('template/templateddl.html');
