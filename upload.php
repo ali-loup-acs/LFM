@@ -19,7 +19,7 @@
                 $size = $_FILES['file']['size'];
                 $file_name =  $info['filename'];
                 $type = $info['extension'];
-                $url = 'http://'.$_SERVER['SERVER_NAME'].'/lfm/mercidl.php?file='.$id_dir;
+                $url = 'http://'.$_SERVER['SERVER_NAME'].'/LFM/mercidl.php?file='.$id_dir;
                 $email = $_REQUEST['email'];
                 $emailp = $_REQUEST['emailp'];
                 addFile($id_dir,$file_name,$size,$type, $url, $email, $emailp);
@@ -29,7 +29,7 @@
                 else {
                   sendEmail($email,$emailp,$url);
                 }
-                header('Location:http://'.$_SERVER['SERVER_NAME'].'/lfm/merciup.php');
+                header('Location:http://'.$_SERVER['SERVER_NAME'].'/LFM/merciup.php');
 
            }
            else //Sinon (la fonction renvoie FALSE).
