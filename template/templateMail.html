@@ -1,11 +1,69 @@
 <html>
 
-	<head>
-	    <meta charset="utf-8">
-	    <title>Les fées mères</title>
-	</head>
-	</body>
-		<p>Bonjour, {{email}} vous a partagé un fichier via notre service en ligne.  Cliquez sur le lien ci joint afin d’y accéder dès à présent et le télécharger en toute sécurité :</p>
-		 <a href="{{url}}">Download</a>
-		<p>Merci d’avoir utilisé LFM</p>
-	</html>
+<head>
+	<meta charset="utf-8">
+	<title>Les fées mères</title>
+	<style media="screen">
+		@font-face {
+			font-family: lfm;
+			src: url("http://ff.static.1001fonts.net/a/r/arkhip.regular.ttf");
+		}
+
+		p {
+			text-align: center;
+			font-family: lfm;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		#button {
+			background-color: ;
+			text-shadow: #fff 0 0 10px;
+			font-family: lfm;
+			font-size: 1.9vmin;
+			margin-left: 38%;
+			border-radius: 60px;
+			width: 25%;
+			background: none;
+			border-radius: 60px;
+			-webkit-box-flex: 1;
+			flex: 1 1 auto;
+			border: 2px solid #f7f7f7;
+			text-align: center;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+			-webkit-transition: .3s;
+			transition: .3s;
+			line-height: 200%;
+			background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+			background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+			background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+			background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+			background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+		}
+
+		body {
+			background-color: ;
+		}
+
+		button:hover {
+			box-shadow: inset 0px 0px 10px 3px white;
+		}
+
+		button:hover:after {
+			width: 0%;
+		}
+	</style>
+</head>
+</body>
+<p>Bonjour, {{email}} vous a partagé un fichier via notre service en ligne. Cliquez sur le lien ci joint afin d’y accéder dès à présent et le télécharger en toute sécurité :</p>
+<button id="button" type="button" name="button"><a href="{{url}}">Telecharger</button>
+<p>Merci d’avoir utilisé LFM</p>
+
+</body>
+
+</html>

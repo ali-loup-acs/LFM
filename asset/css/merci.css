@@ -102,7 +102,7 @@ button {
 }
 
 button:hover {
-    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+    box-shadow: outset 0px 0px 0px 3px #f7f7f7;
 }
 
 button:hover:after {
