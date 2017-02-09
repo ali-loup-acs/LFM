@@ -12,11 +12,7 @@
 <body>
 
     <!-- SVG Starting  -->
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <center><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.279px" height="254.5px" viewBox="0 5.5 595.279 254.5" enable-background="new 0 5.5 595.279 254.5" xml:space="preserve">
+    <center><svg version="1.1" id="logo-dl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.279px" height="254.5px" viewBox="0 5.5 595.279 254.5" enable-background="new 0 5.5 595.279 254.5" xml:space="preserve">
     <path id="violet_1_" fill="#5D398E" d="M432.995,29.071c-1.44,0.624-3.194-1.165-1.801-2.368
     	c6.604-5.691,13.253-10.875,20.938-14.674c-8.287-0.323-16.299,0.406-24.402,3.157c-1.341,0.455-2.224-1.133-1.677-2.215
     	c0.604-1.201,1.167-2.413,1.692-3.64c-3.242,0.831-5.405-0.141-6.53-4.2c-17.287-1.043-34.571-2.085-51.858-3.128
@@ -240,7 +236,7 @@
     <center>
         <h1>Votre fichier est maintenant en ligne</h1>
         <h1>Nous vous remercions d'avoir choisis Les fee meres</h1>
-        <a href="index.html"><h3>Revenir a la page d'acceuil</h3></a>
+        <a href="index.php"><h3>Revenir a la page d'acceuil</h3></a>
     </center>
 
     <footer>

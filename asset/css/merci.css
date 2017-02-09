@@ -1,7 +1,7 @@
-svg {
-    padding-bottom: 12%;
+#Calque_1 {
     width: 150px;
     height: auto;
+    margin-bottom: 10%;
 }
 
 @font-face {
@@ -15,8 +15,6 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background: #092756;
     background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
@@ -27,10 +25,40 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756', GradientType=1);
 }
 
+.dl-info {
+    font-family: lfm;
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    font-size: 2vmin;
+}
+
+#file-info-dl {
+    margin-bottom: 4%;
+}
+
+#easy {
+    font-family: lfm;
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    text-align: center;
+    font-size: 1vmax;
+    text-decoration: underline;
+}
+
+#back-index {
+    font-family: lfm;
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    text-align: center;
+    font-size: 1vmax;
+    margin-top: 4%;
+}
+
 h1 {
     font-family: lfm;
     color: #fff;
     text-shadow: #fff 0 0 10px;
+    font-size: 2vmax;
 }
 
 h3 {
@@ -38,6 +66,7 @@ h3 {
     font-family: lfm;
     color: #fff;
     text-shadow: #fff 0 0 10px;
+    font-size: 2vmax;
 }
 
 #copy {
@@ -56,11 +85,43 @@ button {
     font-family: lfm;
     font-size: 1.9vmax;
     margin-left: 38%;
-    margin-top: 20%;
     border-radius: 60px;
     width: 25%;
-    height: 10%;
-    background: #52A0FD;
-    background: -webkit-linear-gradient(left, #ac4747 0%, #314c9e 90%, #314c9e 100%);
-    background: linear-gradient(to right, #ac4747 0%, #314c9e 90%, #314c9e 100%);
+    background: none;
+    border-radius: 60px;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    line-height: 200%;
+}
+
+button:hover {
+    box-shadow: outset 0px 0px 0px 3px #f7f7f7;
+}
+
+button:hover:after {
+    width: 0%;
+}
+
+#copyright {
+    color: #fff;
+    text-shadow: #fff 0 0 10px;
+    font-family: lfm;
+    font-size: 2vmin;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+
+#logo-dl {
+    padding-bottom: 5%;
+    padding-top: 0;
+    height: auto;
+    width: 100px;
 }

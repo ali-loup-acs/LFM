@@ -236,7 +236,7 @@
     <!-- FORMULAIRE -->
 
     <div class="container">
-        <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="php/upload.php" method="post" id="form" enctype="multipart/form-data">
+        <form class="col-md-4 col-md-push-4 col-xs-8 col-xs-push-2" action="upload.php" method="post" id="form" enctype="multipart/form-data">
             <div class="form-group">
 
                 <label for="email"></label>
@@ -259,7 +259,7 @@
 
             <input type="file" id="file-select" accept="media_type" name="file" style="display: none;">
 
-            <span id="file-value"></span>
+            <span id="file-value">Choisissez un fichier</span>
 
             <div class="checkbox">
                 <label id="checkbox-text"><input type="checkbox" name="copy" value="ok">Recevoir une copie du mail</label>

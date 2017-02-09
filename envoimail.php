@@ -19,8 +19,8 @@ function sendEmail($email, $emailp, $url, $copy= NULL){
 	$msgErreurs = "";
 	$emailValid = true;
 
-	 $templateEmail = file_get_contents('../template/templateMail.html');
-          
+	 $templateEmail = file_get_contents('template/templateMail.html');
+
 	$templateEmail = str_replace('{{url}}', $url, $templateEmail);
 	$message = str_replace('{{email}}', $emailp, $templateEmail);
 
